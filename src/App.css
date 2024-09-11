@@ -1,4 +1,3 @@
-/* Estilo global */
 body {
   margin: 0;
   padding: 0;
@@ -10,7 +9,7 @@ body {
   justify-content: center;
 }
 
-/* Estilo do container principal */
+/* Container principal */
 .app {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.1);
@@ -27,9 +26,62 @@ body {
   margin-bottom: 20px;
 }
 
-/* Estilização para feedback de erro */
+/* Estilo para feedback de erro */
 .error {
   color: #ff6b6b;
   font-size: 0.9rem;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    width: 90%;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .app h1 {
+    font-size: 1.8rem;
+  }
+  .search-bar input {
+    width: 70%;
+    padding: 8px;
+  }
+
+  .search-bar button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .weather-info .temperature {
+    font-size: 2.5rem;
+  }
+
+  .weather-info .city {
+    font-size: 1.3rem;
+  }
+
+  .weather-info .description {
+    font-size: 1rem;
+  }
+
+  .weather-info .weather-icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Para tablets e dispositivos com largura até 900px */
+@media (max-width: 900px) {
+  .app {
+    width: 80%;
+  }
+
+  .search-bar input {
+    width: 75%;
+  }
+
+  .weather-info .temperature {
+    font-size: 2.8rem;
+  }
 }
