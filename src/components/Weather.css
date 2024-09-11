@@ -1,0 +1,30 @@
+/* Estilo do componente de previsão */
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo para a temperatura */
+.weather-info .temperature {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Estilo para o nome da cidade */
+.weather-info .city {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Estilo para a descrição */
+.weather-info .description {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Estilo para o ícone do tempo */
+.weather-info .weather-icon {
+  width: 100px;
+  height: 100px;
+}
